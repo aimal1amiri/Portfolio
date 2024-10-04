@@ -10,8 +10,11 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    //"outDir": "./dist",   // Output compiled JS files to a separate directory
+    //"rootDir": "./src"    // Set root directory for your source files (optional but recommended)
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["**/*.ts", "**/*.tsx", "schemaTypes/index.js"],
+  "exclude": ["node_modules"]  // Exclude JS files to avoid conflicts
+
 }
