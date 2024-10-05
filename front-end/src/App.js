@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+//in contaners folder, ther is file name -containerIndex-, it helps us to import containers files like below
+import { about, footer, header, skills, testimonial, work } from './containers/containerIndex.js';
+import { navBar } from './components/componentsIndex.js';
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+        <navBar />
+        <header />
+        <about />
+        <work />
+        <skills />
+        <testimonial />
+        <footer />
     </div>
   );
 }
