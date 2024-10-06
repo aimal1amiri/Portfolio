@@ -1,6 +1,0 @@
-export { default as about} from './about/about'
-export { default as footer } from './footer/footer'
-export { default as header } from './header/header'
-export { default as skills } from './skills/skills'
-export { default as testimonial } from './testimonial/testimonial'
-export { default as work } from './work/work'
