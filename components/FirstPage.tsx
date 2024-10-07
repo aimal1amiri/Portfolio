@@ -1,6 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
+import  FirstPageButton  from './ui/FirstPageButton';
+import { FaLocationArrow } from 'react-icons/fa';
 
 const FirstPage = () => {
   return (
@@ -28,9 +30,13 @@ const FirstPage = () => {
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
             Hi, I&apos;m Aimal, a Full-stack MERN technology developer based in Earth.
           </p>
+          <a href='#about'>
+            <FirstPageButton title=" See Progress" icon={ <FaLocationArrow /> } position='right'/>
+          </a>
         </div>
       </div>
     </div>
+    
     
   )
 }
