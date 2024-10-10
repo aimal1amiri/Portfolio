@@ -28,7 +28,7 @@ const FirstPage = () => {
           words="From Vision to Reality: Crafting Seamless Experiences"
           />
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi, I&apos;m Aimal, Hi, a Full-stack MERN developer based on Earth.
+            Hi, I&apos;m Aimal, a Full-stack MERN developer based on Earth.
           </p>
           <a href='#about'>
             <FirstPageButton title=" See Progress" icon={ <FaLocationArrow /> } position='right'/>
