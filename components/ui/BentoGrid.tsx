@@ -57,6 +57,7 @@ export const BentoGridItem = ({
   const handleCopy = () =>{
     navigator.clipboard.writeText('create-env-variable-to-from-there@gmail.com');
     setCopied(true);
+    //console.log("copied")
   }
   return (
     <div
@@ -69,7 +70,7 @@ export const BentoGridItem = ({
         backgroundColor: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,74,1) 24%, rgba(0,212,255,1) 100%)'  // this style and the upper background , afftects the dives that we created. I got this gradiant from cssgradient.io
       }}
     >
-      <div className={`${id === 6} && 'flex justify-center h-full` }>
+      <div className={`${id === 6 && 'flex justify-center'} h-full` }>
         <div className="w-full h-full absolute ">
           {img &&(
             <img src={img} alt={img} className={cn(imgClassName, 'object-cover, object-center')}/>
@@ -133,7 +134,7 @@ export const BentoGridItem = ({
                 }
               }}/>
             </div>
-            <MagicButton title={copied ? 'Email Copied' : 'Copy my email'} icon={<IoCopyOutline/>} position='left'otherClasses="!bg-[#161a31]" handleClick={handleCopy} />
+            <MagicButton title={copied ? 'Email Copied' : 'Copy my email'} icon={<IoCopyOutline/>} position="left" otherClasses="!bg-[#161a31]" handleClick={handleCopy} />
           </div>
         )}
 
