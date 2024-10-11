@@ -11,7 +11,14 @@ import Link from "next/link";
 
 export const FloatingNav = ({
   navItems,
-  className
+  className,
+}: {
+  navItems: {
+    name: string;
+    link: string;
+    icon?: JSX.Element;
+  }[];
+  className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
 
@@ -20,7 +27,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious();
+      let direction = current - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
