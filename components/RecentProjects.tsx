@@ -1,6 +1,7 @@
 import React from 'react'
 import { projects } from '@/data/gridItems'
 import { PinContainer } from './ui/3d-pin'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const RecentProjects = () => {
   return (
@@ -35,6 +36,12 @@ const RecentProjects = () => {
                                         <img src={icon} alt={icon} className='p-2' />
                                     </div>
                                 ))}
+                            </div>
+                            <div className='flex justify-center items-center'>
+                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
+                                    Check Live Site
+                                </p>
+                                <FaLocationArrow className='ms-3' color='#CBACF9' />
                             </div>
                         </div>
                     </PinContainer>
