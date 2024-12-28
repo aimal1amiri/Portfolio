@@ -19,7 +19,7 @@
 ###
 
 <div align="center">
-  <img height="700" src="https://github.com/aimal1amiri/Portfolio/blob/master/portfolio.png"  />
+  <img height="400" src="https://github.com/aimal1amiri/Portfolio/blob/master/portfolio.png"  />
 </div>
 
 ###
